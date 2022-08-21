@@ -24,37 +24,116 @@
 <body>
   <!--        ヘッダー        -->
   <header class="header">
-    <div class="header-container">
-      <div class="header-logo"></div>
-      <div class="burger-container">
-        <nav>
-          <ul class="header-nav">
-            <li class="header-nav__item"><a href=""></a></li>
-            <li class="header-nav__item"><a href=""></a></li>
-            <li class="header-nav__item"><a href=""></a></li>
-          </ul>
-        </nav>
-      </div>
-      <button class="nav-btn">
-        <span class="bar bar__top"></span>
-        <span class="bar bar__mid"></span>
-        <span class="bar bar__bottom"></span>
-      </button>
-    </div><!-- /.header-container -->
+    <h1 class="header__logo">
+      <a href="">
+        <img src="images/common/logo.png" alt="">
+      </a>
+    </h1>
+    <button id="hamburger" class="hamburger">
+      <span class="hamburger__line"></span>
+    </button>
+    <nav class="header-nav">
+      <ul class="header-nav__list">
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="">news</a>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="">service</a>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="">works</a>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="">company</a>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="">recruit</a>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="">contact</a>
+        </li>
+      </ul>
+    </nav>
+    </div>
   </header>
   <!--        ヘッダー終わり        -->
+  <!--          sub-ｍｖ             -->
+  <div class="sub-mv">
+    <div class="sub-mv__inner">
+      <div class="heading-lv2">
+        <h2 class="heading-lv2__main"></h2>
+        <p class="heading-lv2__sub"></p>
+      </div>
+    </div>
+  </div>
+  <!--    sub-mv終わり -->
+  <!--          パンくず                  -->
+  <nav class="breadcrumb">
+    <ol class="breadcrumb__list">
+      <li class="breadcrumb__item">
+        <a href="" class="breadcrumb__link">home</a>
+      </li>
+      <li class="breadcrumb__item">
+        <a href="" class="breadcrumb__link"></a>
+      </li>
+    </ol>
+  </nav>
+  <!--          パンくず終わり           -->
   <!--        メイン        -->
   <div class="main">
-    <div class="main__inner"></div>
+    <div class="main__inner">
+      <section class="section">
+        <div class="section__inner">
+          <div class="heading-lv2">
+            <h2 class="heading-lv2__main">contact</h2>
+            <p class="heading-lv2__sub">お問い合わせ</p>
+          </div>
+          <div class="contact">
+            <p class="contact__text">Webサイトの制作のご依頼やお見積りなど、お気軽にご相談ください。</p>
+            <div class="contact__btn">
+              <a href="" class="btn">more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   </div>
   <!--        メイン終わり        -->
   <!--        フッター        -->
   <footer class="footer">
     <div class="footer__inner">
-      <small class="copyright">&copy;</small>
+      <nav class="footer-nav">
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item">
+            <a href="" class="footer-nav__link">home</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="" class="footer-nav__link">news</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="" class="footer-nav__link">service</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="" class="footer-nav__link">works</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="" class="footer-nav__link">company</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="" class="footer-nav__link">recruit</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="" class="footer-nav__link">contact</a>
+          </li>
+        </ul>
+      </nav>
+      <small class="copyright">&copy;pon design</small>
     </div>
   </footer>
   <!--        フッター終わり       -->
+  <div class="page-top">
+    <a href="" class="page-top__link"></a>
+  </div>
   <script src="common/js/jquery-3.6.0.min.js"></script>
   <script src="common/js/script.js"></script>
 </body>
