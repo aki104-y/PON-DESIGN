@@ -24,9 +24,9 @@
 <body>
   <!--        ヘッダー        -->
   <header class="header">
-    <h1 class="header__logo">
-      <a href="">
-        <img src="images/common/logo.png" alt="">
+    <h1 class="header__logo logo">
+      <a  class="logo__link" href="">
+        <img class="logo__img" src="images/common/logo.png" alt="">
       </a>
     </h1>
     <button id="hamburger" class="hamburger">
@@ -74,7 +74,7 @@
         <a href="" class="breadcrumb__link">home</a>
       </li>
       <li class="breadcrumb__item">
-        <a href="" class="breadcrumb__link"></a>
+        <a href="" class="breadcrumb__link">news</a>
       </li>
     </ol>
   </nav>
@@ -82,14 +82,14 @@
   <!--        メイン        -->
   <div class="main">
     <div class="main__inner">
-      <section class="section">
+      <section class="section section--contact">
         <div class="section__inner">
           <div class="heading-lv2">
             <h2 class="heading-lv2__main">contact</h2>
             <p class="heading-lv2__sub">お問い合わせ</p>
           </div>
           <div class="contact">
-            <p class="contact__text">Webサイトの制作のご依頼やお見積りなど、お気軽にご相談ください。</p>
+            <p class="contact__text">Webサイトの制作のご依頼やお見積りなど、<br class="contact__text-br">お気軽にご相談ください。</p>
             <div class="contact__btn">
               <a href="" class="btn">more</a>
             </div>
@@ -127,7 +127,9 @@
           </li>
         </ul>
       </nav>
-      <small class="copyright">&copy;pon design</small>
+      <small class="footer-copyright">
+        <a href="" class="footer-copyright__link">&copy;pon design</a>
+      </small>
     </div>
   </footer>
   <!--        フッター終わり       -->

@@ -26,4 +26,25 @@ $(function () {
       prevEl: '.swiper-button-prev',
     },
   });
+
+  //ページトップボタンがふわっと出現
+  //--------------------------------------------
+  var $pageTop = $('.page-top');
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 300) {
+      $pageTop.fadeIn();
+    } else {
+      $pageTop.fadeOut();
+    }
+  });
+
+  //スクロールするとヘッダーの背景色が追加
+  //--------------------------------------------
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 200) {
+      $('.header').addClass('header--active');
+    } else {
+      $('.header').removeClass('header--active');
+    }
+  });
 });
