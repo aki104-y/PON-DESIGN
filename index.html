@@ -25,8 +25,11 @@
   <!--        ヘッダー        -->
   <header class="header">
     <h1 class="header__logo logo">
-      <a  class="logo__link" href="">
-        <img class="logo__img" src="images/common/logo.png" alt="">
+      <a class="logo__link" href="">
+        <picture class="logo__img">
+          <source media="(min-width: 768px)" srcset='images/common/logo.png'>
+          <img src="images/common/logo-s.png">
+        </picture>
       </a>
     </h1>
     <button id="hamburger" class="hamburger">
@@ -35,53 +38,223 @@
     <nav class="header-nav">
       <ul class="header-nav__list">
         <li class="header-nav__item">
-          <a class="header-nav__link" href="">news</a>
+          <a class="header-nav__link" href="news/index.html">news</a>
         </li>
         <li class="header-nav__item">
-          <a class="header-nav__link" href="">service</a>
+          <a class="header-nav__link" href="service/index.html">service</a>
         </li>
         <li class="header-nav__item">
-          <a class="header-nav__link" href="">works</a>
+          <a class="header-nav__link" href="works/index.html">works</a>
         </li>
         <li class="header-nav__item">
-          <a class="header-nav__link" href="">company</a>
+          <a class="header-nav__link" href="company/index.html">company</a>
         </li>
         <li class="header-nav__item">
-          <a class="header-nav__link" href="">recruit</a>
+          <a class="header-nav__link" href="recruit/index.html">recruit</a>
         </li>
         <li class="header-nav__item">
-          <a class="header-nav__link" href="">contact</a>
+          <a class="header-nav__link" href="contact/index.html">contact</a>
         </li>
       </ul>
     </nav>
     </div>
   </header>
   <!--        ヘッダー終わり        -->
-  <!--          sub-ｍｖ             -->
-  <div class="sub-mv">
-    <div class="sub-mv__inner">
-      <div class="heading-lv2">
-        <h2 class="heading-lv2__main"></h2>
-        <p class="heading-lv2__sub"></p>
+  <!--          mv             -->
+  <div class="mv">
+    <div class="mv__inner">
+      <div class="mv__title-area">
+        <h2 class="mv__title-main">WEB DESIGN SPECIALIST</h2>
+        <p class="mv__title-sub">お客様の夢を叶える<br class="mv__title-sub-br">
+          Webサイトを制作</p>
+      </div>
+      <div class="mv__btn">
+        <a href="contact/index.html" class="btn btn--transparent">contact</a>
+      </div>
+      <div class="mv__scrolldown">
+        <span class="mv__scrolldown-text">scroll</span>
       </div>
     </div>
   </div>
-  <!--    sub-mv終わり -->
-  <!--          パンくず                  -->
-  <nav class="breadcrumb">
-    <ol class="breadcrumb__list">
-      <li class="breadcrumb__item">
-        <a href="" class="breadcrumb__link">home</a>
-      </li>
-      <li class="breadcrumb__item">
-        <a href="" class="breadcrumb__link">news</a>
-      </li>
-    </ol>
-  </nav>
-  <!--          パンくず終わり           -->
+  <!--    mv終わり -->
   <!--        メイン        -->
   <div class="main">
     <div class="main__inner">
+      <section class="section">
+        <div class="section__inner">
+          <div class="news">
+            <div class="news__heading">
+              <div class="heading-lv2">
+                <h2 class="heading-lv2__main">news</h2>
+                <p class="heading-lv2__sub">お知らせ</p>
+              </div>
+            </div>
+            <div class="news__body">
+              <ul class="news-list">
+                <li class="news-list__item">
+                  <div class="news-list__header">
+                    <time class="news-list__date" datetime="2030-02-01">2030.02.01</time>
+                    <span class="news-list__tag">お知らせ</span>
+                  </div>
+                  <div class="news-list__body">
+                    <a href="" class="news-list__link">Webデザインニュースサイト「ウェブマガジン」に取材いただきました</a>
+                  </div>
+                </li>
+                <li class="news-list__item">
+                  <div class="news-list__header">
+                    <time class="news-list__date" datetime="2030-01-25">2030.01.25</time>
+                    <span class="news-list__tag">制作実績</span>
+                  </div>
+                  <div class="news-list__body">
+                    <a href="" class="news-list__link">Smoothiesta様のWebサイトを制作いたしました</a>
+                  </div>
+                </li>
+                <li class="news-list__item">
+                  <div class="news-list__header">
+                    <time class="news-list__date" datetime="2030-01-20">2030.01.20</time>
+                    <span class="news-list__tag">採用</span>
+                  </div>
+                  <div class="news-list__body">
+                    <a href="" class="news-list__link">Webデザイナーを１名募集中です！</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="section__inner">
+          <div class="service">
+            <div class="heading-lv2">
+              <h2 class="heading-lv2__main">service</h2>
+              <p class="heading-lv2__sub">事業内容</p>
+            </div>
+            <div class="service-cards">
+              <div class="service-card">
+                <div class="service-card__img-inner">
+                  <img src="images/common/service01.jpg" alt="" class="service-card__img">
+                </div>
+                <div class="service-card__body">
+                  <h3 class="service-card__title">Webサイト制作</h3>
+                  <p class="service-card__text">新規サイトの制作はもちろんサイトリニューアルやランディングページの制作も可能です。</p>
+                </div>
+              </div>
+              <div class="service-card">
+                <div class="service-card__img-inner">
+                  <img src="images/common/service02.jpg" alt="" class="service-card__img">
+                </div>
+                <div class="service-card__body">
+                  <h3 class="service-card__title">Webサイト運用
+                  </h3>
+                  <p class="service-card__text">サイトの更新作業や独自のアクセス解析に基づいたサイト改善のご提案をいたします。
+                  </p>
+                </div>
+              </div>
+              <div class="service-card">
+                <div class="service-card__img-inner">
+                  <img src="images/common/service03.jpg" alt="" class="service-card__img">
+                </div>
+                <div class="service-card__body">
+                  <h3 class="service-card__title">アプリ開発</h3>
+                  <p class="service-card__text">スマートフォンアプリ開発の他、Vue.jsやReactによるWebアプリの開発が可能です。</p>
+                </div>
+              </div>
+            </div>
+            <div class="service__btn">
+              <a href="service/index.html" class="btn">more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--works">
+        <div class="section__inner">
+          <div class="works">
+            <div class="works__img-inner">
+              <div class="swiper-container">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="swiper-slide-inner1">
+                        <img src="images/common/smoothiesta.png" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-slide-inner2">
+                        <img src="images/common/web-conference.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-slide-inner3">
+                        <img src="images/common/lamina.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-scrollbar"></div>
+                </div>
+              </div>
+            </div>
+            <div class="works__body">
+              <div class="heading-lv2">
+                <h2 class="heading-lv2__main">works</h2>
+                <p class="heading-lv2__sub">制作実績</p>
+              </div>
+              <p class="works__text">様々なジャンルのWebサイト制作が可能です。<br>
+                ご購入やお申込み数の増加などを実現します！</p>
+              <div class="works__btn">
+                <a href="works/index.html" class="btn">more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--company">
+        <div class="section__inner">
+          <div class="company">
+            <div class="heading-lv2">
+              <h2 class="heading-lv2__main">company</h2>
+              <p class="heading-lv2__sub">私たちについて</p>
+            </div>
+            <div class="message">
+              <h2 class="message__heading">サイトのゴール = <br class="message__heading-br">
+                夢を叶えること
+              </h2>
+              <p class="message__text">
+                お客様の夢を叶えること。<br>
+                それがWebサイトのゴールであり、<br class="message__text-br">私たちが目指すことです。<br>
+                だからこそちゃんと成果を出すサイトを<br class="message__text-br">全力でお作りします。<br>
+                お客様の笑顔を見たい。<br>
+                夢を実現する手助けをさせてください。
+              </p>
+            </div>
+            <div class="company__btn">
+              <a href="company/index.html" class="btn">more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="section__inner">
+          <div class="recruit">
+            <div class="recruit__img-inner">
+              <img src="images/index/top-recruit.png" alt="" class="recruit__img">
+            </div>
+            <div class="recruit__body">
+              <div class="heading-lv2">
+                <h2 class="heading-lv2__main">recruit</h2>
+                <p class="heading-lv2__sub">採用情報</p>
+              </div>
+              <p class="recruit__text">私たちと一緒に働きませんか？</p>
+              <div class="recruit__btn">
+                <a href="recruit/index.html" class="btn">more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="section section--contact">
         <div class="section__inner">
           <div class="heading-lv2">
@@ -91,7 +264,7 @@
           <div class="contact">
             <p class="contact__text">Webサイトの制作のご依頼やお見積りなど、<br class="contact__text-br">お気軽にご相談ください。</p>
             <div class="contact__btn">
-              <a href="" class="btn">more</a>
+              <a href="contact/index.html" class="btn">more</a>
             </div>
           </div>
         </div>
@@ -108,33 +281,33 @@
             <a href="" class="footer-nav__link">home</a>
           </li>
           <li class="footer-nav__item">
-            <a href="" class="footer-nav__link">news</a>
+            <a href="news/index.html" class="footer-nav__link">news</a>
           </li>
           <li class="footer-nav__item">
-            <a href="" class="footer-nav__link">service</a>
+            <a href="service/index.html" class="footer-nav__link">service</a>
           </li>
           <li class="footer-nav__item">
-            <a href="" class="footer-nav__link">works</a>
+            <a href="works/index.html" class="footer-nav__link">works</a>
           </li>
           <li class="footer-nav__item">
-            <a href="" class="footer-nav__link">company</a>
+            <a href="company/index.html" class="footer-nav__link">company</a>
           </li>
           <li class="footer-nav__item">
-            <a href="" class="footer-nav__link">recruit</a>
+            <a href="recruit/index.html" class="footer-nav__link">recruit</a>
           </li>
           <li class="footer-nav__item">
-            <a href="" class="footer-nav__link">contact</a>
+            <a href="contact/index.html" class="footer-nav__link">contact</a>
           </li>
         </ul>
       </nav>
       <small class="footer-copyright">
-        <a href="" class="footer-copyright__link">&copy;pon design</a>
+        <a href="index.html" class="footer-copyright__link">&copy;pon design</a>
       </small>
     </div>
   </footer>
   <!--        フッター終わり       -->
   <div class="page-top">
-    <a href="" class="page-top__link"></a>
+    <a href="#" class="page-top__link"></a>
   </div>
   <script src="common/js/jquery-3.6.0.min.js"></script>
   <script src="common/js/script.js"></script>
