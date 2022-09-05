@@ -799,6 +799,20 @@ li {
   font-weight: 600;
 }
 
+/* grid
+------------------------------------------------------ */
+.grid {
+  display: grid;
+  gap: 30px;
+}
+
+/*PC3カラム*/
+@media screen and (min-width: 768px) {
+  .grid--pc3col {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 /* mv
 ------------------------------------------------------ */
 .mv {
@@ -934,8 +948,9 @@ li {
 /* news
 ------------------------------------------------------ */
 @media screen and (min-width: 768px) {
-  .news {
+  .news__inner {
     display: flex;
+    max-width: 950px;
   }
 }
 
