@@ -998,8 +998,59 @@ li {
   color: #333;
 }
 
+/* service
+------------------------------------------------------ */
+.service__btn {
+  text-align: center;
+}
+
 /* service-card
 ------------------------------------------------------ */
+.service-cards {
+  margin-bottom: 15px;
+}
+
+.service-card__img-inner {
+  margin-bottom: 15px;
+}
+
+.service-card__title {
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 18px;
+  font-size: 1.125rem;
+}
+
+.service-card__text {
+  font-size: 0.875rem;
+}
+@media screen and (min-width: 768px) {
+  .service-card__text {
+    font-size: 0.9375rem;
+  }
+}
+
+/* works
+------------------------------------------------------ */
+.works__inner {
+  display: flex;
+  max-width: 1300px;
+  padding: 60px 20px;
+}
+
+.works__img-inner {
+  margin-right: 0;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .works__img-inner {
+    flex: 0 1 27.58333%;
+    margin-right: 3.33333%;
+  }
+}
+
 /* swiper
 ------------------------------------------------------ */
 .swiper-container {
