@@ -336,11 +336,11 @@ body {
   line-height: 1.8;
   color: #333;
   letter-spacing: 0.05em;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
 }
 @media screen and (min-width: 768px) {
   body {
-    font-size: 0.875rem;
+    font-size: 0.9375rem;
   }
 }
 
@@ -1007,7 +1007,7 @@ li {
 /* service-card
 ------------------------------------------------------ */
 .service-cards {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .service-card__img-inner {
@@ -1023,32 +1023,40 @@ li {
   font-size: 1.125rem;
 }
 
-.service-card__text {
-  font-size: 0.875rem;
-}
-@media screen and (min-width: 768px) {
-  .service-card__text {
-    font-size: 0.9375rem;
-  }
-}
-
 /* works
 ------------------------------------------------------ */
 .works__inner {
   display: flex;
   max-width: 1300px;
   padding: 60px 20px;
+  align-items: center;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .works__inner {
+    flex-direction: row;
+  }
 }
 
 .works__img-inner {
+  width: 100%;
   margin-right: 0;
   margin-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
   .works__img-inner {
-    flex: 0 1 27.58333%;
+    width: 59.5238095238%;
     margin-right: 3.33333%;
   }
+}
+
+.works__body {
+  flex: 1;
+  text-align: center;
+}
+
+.works__text {
+  margin-bottom: 30px;
 }
 
 /* swiper
