@@ -674,6 +674,10 @@ li {
   font-size: 0.8125rem;
 }
 
+.heading-lv2--white {
+  color: #ffffff;
+}
+
 /* btn
 ------------------------------------------------------ */
 .btn {
@@ -717,10 +721,35 @@ li {
   background: none;
 }
 
+/* section
+------------------------------------------------------ */
+.section {
+  padding: 40px 0;
+}
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 70px 0;
+  }
+}
+
+.section__inner {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 /* contact
 ------------------------------------------------------ */
 .contact {
   text-align: center;
+  background-color: #f0f0f0;
+  padding: 60px 0;
+  margin-top: 40px;
+}
+@media screen and (min-width: 768px) {
+  .contact {
+    padding: 80px 0;
+  }
 }
 
 .contact__text {
@@ -736,28 +765,6 @@ li {
   .contact__text-br {
     display: none;
   }
-}
-
-/* section
------------------------------------------------------- */
-.section {
-  padding: 40px 0;
-}
-@media screen and (min-width: 768px) {
-  .section {
-    padding: 70px 0;
-  }
-}
-
-.section--contact {
-  padding: 80px 0;
-  background-color: #f0f0f0;
-}
-
-.section__inner {
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 0 15px;
 }
 
 /* page-top
@@ -1016,11 +1023,17 @@ li {
 @media screen and (min-width: 768px) {
   .news-list__item {
     display: flex;
+    font-size: 0.875rem;
   }
 }
 
 .news-list__item:not(:last-child) {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .news-list__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
 }
 
 .news-list__date {
@@ -1138,13 +1151,14 @@ li {
 
 .company__inner {
   background-image: url(../../images/common/bg-circle.png);
-  padding: 100px 0;
+  padding: 60px 0;
   max-width: 1300px;
   background-position: center center;
   background-size: contain;
 }
 @media screen and (min-width: 768px) {
   .company__inner {
+    padding: 100px 0;
     background-image: url(../../images/common/bg-circle.png), url(../../images/common/bg-face.png);
     background-position: center center, center center;
   }
@@ -1156,11 +1170,19 @@ li {
 
 /* recruit
 ------------------------------------------------------ */
+.recruit {
+  padding: 0;
+}
+@media screen and (min-width: 768px) {
+  .recruit {
+    padding: 70px 0;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .recruit__inner {
     display: flex;
     flex-direction: row-reverse;
-    align-items: center;
   }
 }
 
