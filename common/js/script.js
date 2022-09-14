@@ -59,7 +59,7 @@ $(function () {
   //スクロールするとヘッダーの背景色が追加
   //--------------------------------------------
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 200) {
+    if ($(this).scrollTop() > 0) {
       $('.header').addClass('header--active');
     } else {
       $('.header').removeClass('header--active');
