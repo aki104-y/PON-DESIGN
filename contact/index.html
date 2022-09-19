@@ -57,15 +57,14 @@
         </li>
       </ul>
     </nav>
-    </div>
   </header>
   <!--        ヘッダー終わり        -->
-  <!--          sub-ｍｖ             -->
+  <!--          sub-mv             -->
   <div class="sub-mv">
     <div class="sub-mv__inner">
-      <div class="heading-lv2">
-        <h2 class="heading-lv2__main"></h2>
-        <p class="heading-lv2__sub"></p>
+      <div class="heading-lv2 heading-lv2--white">
+        <h2 class="heading-lv2__main">contact</h2>
+        <p class="heading-lv2__sub">お問い合わせ</p>
       </div>
     </div>
   </div>
@@ -76,23 +75,95 @@
       <li class="breadcrumb__item">
         <a href="../index.html" class="breadcrumb__link">home</a>
       </li>
-      <li class="breadcrumb__item">news</li>
+      <li class="breadcrumb__item">contact</li>
     </ol>
   </nav>
   <!--          パンくず終わり           -->
   <!--        メイン        -->
   <div class="main">
     <div class="main__inner">
-      <section class="section section--contact">
-        <div class="section__inner">
-          <div class="heading-lv2">
-            <h2 class="heading-lv2__main">contact</h2>
-            <p class="heading-lv2__sub">お問い合わせ</p>
+      <section class="section contact-form">
+        <div class="section__inner contact-form__inner">
+          <div class="contact-form__lead">
+            <p class="contact-form__text">Webサイトの制作のご依頼やお見積りなど、お気軽にご相談ください。</p>
           </div>
-          <div class="contact">
-            <p class="contact__text">Webサイトの制作のご依頼やお見積りなど、<br class="contact__text-br">お気軽にご相談ください。</p>
-            <div class="contact__btn">
-              <a href="" class="btn">more</a>
+          <div class="contact-form__body">
+            <div class="form-container">
+              <form action="#">
+                <div class="form">
+                  <div class="form__item">
+                    <label for="username" class="form__ttl">お問い合わせ種別<strong class="label-required">*必須</strong></label>
+                    <div class="form__body">
+                      <ul class="radio-list">
+                        <li class="radio-item"><label><input type="radio" name="type" value="お仕事のご依頼・ご相談" checked><span>お仕事のご依頼・ご相談</span></label></li>
+                        <li class="radio-item"><label><input type="radio" name="type" value="お見積りのご依頼"><span>お見積りのご依頼</span></label></li>
+                        <li class="radio-item"><label><input type="radio" name="type" value="採用について"><span>採用について</span></label></li>
+                        <li class="radio-item"><label><input type="radio" name="type" value="その他"><span>その他</span></label></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="form__item">
+                    <label for="username" class="form__ttl">お名前<strong class="label-required">*必須</strong></label>
+                    <div class="form__body">
+                      <div class="inputField">
+                        <input type="text" name="username" id="username" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form__item">
+                    <label for="company" class="form__ttl">会社名<strong class="label-required">*必須</strong></label>
+                    <div class="form__body">
+                      <div class="inputField">
+                        <input type="text" name="company" id="compny" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form__item">
+                    <label for="email" class="form__ttl">メールアドレス<strong class="label-required">*必須</strong></label>
+                    <div class="form__body">
+                      <div class="inputField">
+                        <input type="email" name="email" id="email" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form__item">
+                    <label for="tel" class="form__ttl">電話番号<small class="inputNote">（半角数字ハイフンなし）</small></label>
+                    <div class="form__body">
+                      <div class="inputField">
+                        <input type="tel" name="tel" id="tel">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form__item">
+                    <label for="message" class="form__ttl">お問い合わせ内容</label>
+                    <div class="form__body">
+                      <div class="inputField">
+                        <textarea id="message" name="message" placeholder="お問い合わせ内容を具体的にご記入くださいませ。" class="form__textarea"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form__item">
+                    <label for="job" class="form__ttl">PON DESIGNをどちらでお知りになりましたか？<strong class="label-required">*必須</strong></label>
+                    <div class="form__body">
+                      <div class="inputField">
+                        <div class="selectWrap">
+                          <select name="job" id="job" required>
+                            <option value="">選択してください</option>
+                            <option value="Google/Yahoo検索">Google/Yahoo検索</option>
+                            <option value="SNS">SNS</option>
+                            <option value="ブログ">ブログ</option>
+                            <option value="友人や知人">友人や知人</option>
+                            <option value="その他">その他</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form__btn">
+                    <button type='submit' class="btn">送信する</button>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>
