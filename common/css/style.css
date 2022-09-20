@@ -1596,6 +1596,10 @@ select {
 
 /* recruit-message
 ------------------------------------------------------ */
+.recruit-message {
+  overflow: hidden;
+}
+
 .recruit-message__heading {
   color: #391e88;
   margin: 20px 0;
@@ -1634,15 +1638,9 @@ select {
   }
 }
 
-/* recruit-image
------------------------------------------------------- */
-.recruit-image {
-  padding: 0;
-  margin-top: -40px;
-}
-
-.recruit-image__inner {
-  padding: 0;
+.recruit-message__img-inner {
+  margin: 0 calc(50% - 50vw);
+  width: 100vw;
 }
 
 /* recruit-job
