@@ -1584,6 +1584,16 @@ select {
   text-align: center;
 }
 
+.contact-form__text {
+  font-size: 0.875rem;
+  font-weight: normal;
+}
+@media screen and (min-width: 768px) {
+  .contact-form__text {
+    font-size: 0.9375rem;
+  }
+}
+
 .contact-form__body {
   background-color: #f7f7f7;
   padding: 30px;
